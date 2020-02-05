@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- inject:head:favicons -->
+<!-- endinject -->
+    <title>LintRC UI | Home</title>
+    <link rel="stylesheet" href="./css/index.min.css">
+  </head>
+  <body>
+    <header class="header-page">
+            <div class="logo">
+              <svg>
+                <use xlink:href="#logo"></use>
+              </svg>
+            </div>
+      <div class="menu">
+        <input class="visually-hidden menu__check" id="menu" type="checkbox">
+        <label class="menu__wrap-icon" for="menu"><span class="menu__icon"></span></label>
+        <div class="menu__wrap">
+          <label class="menu__close" for="menu">
+            <svg class="menu__img">
+              <use xlink:href="#close"></use>
+            </svg>
+          </label>
+          <nav class="menu__list"><a class="menu__item" href="editorconfig.html">Editor Config</a><a class="menu__item" href="htmlhintrc.html">HTML Hint</a><a class="menu__item" href="puglintrc.html">Pug Linter</a><a class="menu__item" href="stylelintrc.html">Style Lint</a><a class="menu__item" href="sasslintrc.html">Sass Lint</a><a class="menu__item" href="eslint.html">ESLint</a></nav>
+                    <div class="theme-button menu__theme-button">
+                      <label class="theme-button__label" for="themeMenu">Dark mode</label>
+                      <input class="visually-hidden theme-button__check" id="themeMenu" type="checkbox" checked>
+                      <label class="theme-button__base" for="themeMenu"><span class="theme-button__lever"></span></label>
+                    </div>
+                    <div class="social menu__social"><a class="social__icon" href="https://github.com/lintrc-ui/rules/" title="We are on GitHub" target="_blank">
+                        <svg class="social__img social__img--github">
+                          <use xlink:href="#github"></use>
+                        </svg></a></div>
+        </div>
+      </div>
+    </header>
+    <main class="main-page">
+      <section class="about">
+        <h1 class="about__title">Visual configuration of code linters</h1>
+        <p class="about__text">This resource was created to simplify customization of popular code linters among developers. To facilitate and speed up the process, all settings are divided into logical sections and have a visual display of the applicable rules.</p>
+        <p class="about__text">Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.</p>
+      </section>
+      <section class="about-lint">
+        <h2 class="about-lint__title">Basic information about the presented linters</h2>
+        <ul class="tabs">
+          <li class="tabs__list"><span class="tabs__main-link tabs__main-link--active"><img class="tabs__logo" src="./img/logo-editorconfig.png" alt="editorconfig logo">EditorConfig</span><span class="tabs__main-link"><img class="tabs__logo" src="./img/logo-pug.svg" alt="Pug logo">Pug Lint</span><span class="tabs__main-link"><img class="tabs__logo" src="./img/logo-htmlhint.png" alt="HTMLHint logo">HTMLHint</span><span class="tabs__main-link"><img class="tabs__logo" src="./img/logo-sass.svg" alt="Sass logo">Sass Lint</span><span class="tabs__main-link">
+              <svg class="tabs__logo">
+                <use xlink:href="#logo_stylelint"></use>
+              </svg>stylelint</span><span class="tabs__main-link"><img class="tabs__logo" src="./img/logo-eslint.svg" alt="ESLint logo">ESLint</span></li>
+          <li class="tabs__content tabs__content--active"><span class="tabs__inline-link tabs__inline-link--active"><img class="tabs__logo-inline" src="./img/logo-editorconfig.png" alt="editorconfig logo">EditorConfig</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.editorconfig</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://editorconfig.org" target="_blank">official website</a> of the EditorConfig project.</p>
+            </div>
+          </li>
+          <li class="tabs__content"><span class="tabs__inline-link"><img class="tabs__logo-inline" src="./img/logo-pug.svg" alt="Pug logo">Pug Lint</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">An unopinionated and configurable linter and style checker for Pug (formerly Jade).</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.pug-lintrc.json</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://github.com/pugjs/pug-lint" target="_blank">official website</a> of the pug-lint project.</p>
+            </div>
+          </li>
+          <li class="tabs__content"><span class="tabs__inline-link"><img class="tabs__logo-inline" src="./img/logo-htmlhint.png" alt="HTMLHint logo">HTMLHint</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">HTMLHint is a Static Code Analysis Tool for HTML, you can use it with IDE or in build system..</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.htmlhintrc</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://htmlhint.com" target="_blank">official website</a> of the HTMLHint project.</p>
+            </div>
+          </li>
+          <li class="tabs__content"><span class="tabs__inline-link"><img class="tabs__logo-inline" src="./img/logo-sass.svg" alt="Sass logo">Sass Lint</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">A Node-only Sass linter for both sass and scss syntax!</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.sasslintrc</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://github.com/sasstools/sass-lint/tree/master" target="_blank">official website</a> of the Sass Lint project.</p>
+            </div>
+          </li>
+          <li class="tabs__content"><span class="tabs__inline-link">
+              <svg class="tabs__logo-inline">
+                <use xlink:href="#logo_stylelint"></use>
+              </svg>stylelint</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.stylelintrc.json</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://stylelint.io" target="_blank">official website</a> of the stylelint project.</p>
+            </div>
+          </li>
+          <li class="tabs__content"><span class="tabs__inline-link"><img class="tabs__logo-inline" src="./img/logo-eslint.svg" alt="ESLint logo">ESLint</span>
+            <div class="tabs__wrap">
+              <h2 class="tabs__title">About</h2>
+              <p class="tabs__text">ESLint is an open source JavaScript linting utility.</p>
+              <h2 class="tabs__title">Configuration file</h2>
+              <p class="tabs__text">For configuration, the <code>.eslintrc.json</code> file is used, which should be located in the root directory of the project.</p>
+              <p class="tabs__text">For more information, visit the <a class="tabs__link" href="https://eslint.org" target="_blank">official website</a> of the ESLint project.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./js/index-common.min.js"></script>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="logo" viewBox="0 0 100 100">
+        <path id="logo_body" d="m 6.9503,46.639181 c 3.42648,0 5.02292,-1.5975 4.78928,-4.7928 l -0.58405,-9.1764 c -0.0779,-1.5976 0.11689,-3.0197 0.58405,-4.2668 0.46725,-1.2468 1.16813,-2.2989 2.10262,-3.1561 0.97343,-0.8962 2.12208,-1.5782 3.44595,-2.0458 1.3628,-0.4676 2.88136,-0.7013 4.55567,-0.7013 h 3.9716 v 6.7216 h -2.97871 c -1.40174,0 -2.49198,0.3312 -3.27072,0.9936 -0.77876,0.6624 -1.12918,1.7145 -1.05132,3.1562 l 0.58407,9.1764 c 0.11675,2.1821 -0.52566,3.916 -1.9274,5.2019 -1.3628,1.2858 -3.19286,1.9679 -5.49016,2.0457 v 0.2922 c 2.33623,0.078 4.18576,0.7989 5.54856,2.1627 1.3628,1.3248 1.9858,3.0783 1.869,5.2603 l -0.58407,9.118 c -0.0778,1.2858 0.27261,2.2991 1.05132,3.0393 0.81768,0.7014 1.90792,1.0521 3.27072,1.0521 h 2.97871 v 6.78 h -3.9716 c -1.63539,0 -3.13447,-0.2532 -4.49727,-0.7599 -1.3628,-0.4675 -2.53092,-1.1494 -3.50435,-2.0456 -0.93449,-0.8961 -1.65484,-1.9872 -2.16102,-3.2732 -0.46725,-1.2859 -0.64247,-2.7275 -0.52565,-4.3251 l 0.58405,-8.8842 c 0.11676,-1.5975 -0.21414,-2.8055 -0.99289,-3.6238 -0.73981,-0.8183 -2.00528,-1.2275 -3.79639,-1.2275 H 0 v -6.7215 z m 67.2343,30.8608 v -6.78 h 2.97871 c 1.40174,0 2.49198,-0.3312 3.27072,-0.9936 0.81768,-0.6624 1.18758,-1.695 1.10972,-3.0978 l -0.58407,-9.1764 c -0.15574,-2.1821 0.44779,-3.9161 1.81059,-5.2019 1.40174,-1.2859 3.25126,-1.9678 5.54857,-2.0457 v -0.2923 c -2.33624,-0.078 -4.18577,-0.7793 -5.54857,-2.1042 -1.3628,-1.3637 -1.96633,-3.1366 -1.81059,-5.3188 l 0.58407,-9.1179 c 0.0778,-1.3247 -0.29207,-2.338 -1.10972,-3.0394 -0.81768,-0.7402 -1.90792,-1.1104 -3.27072,-1.1104 H 74.1846 v -6.7216 h 4.03 c 1.63539,0 3.11499,0.2533 4.43887,0.7598 1.3628,0.4675 2.51144,1.1496 3.44593,2.0456 0.97344,0.8963 1.69377,1.9873 2.16103,3.2732 0.50618,1.247 0.70087,2.6692 0.58405,4.2668 l -0.58405,8.9425 c -0.11675,1.5977 0.19467,2.8056 0.93448,3.6238 0.77876,0.7795 2.06368,1.169 3.85479,1.169 H 100 v 6.7216 h -6.9503 c -3.42647,0 -5.02291,1.6172 -4.78927,4.8513 l 0.58405,9.1179 c 0.0778,1.5587 -0.11676,2.9614 -0.58405,4.2083 -0.46726,1.2858 -1.16813,2.3769 -2.10261,3.2731 -0.93449,0.8963 -2.08315,1.5782 -3.44595,2.0457 -1.3628,0.4676 -2.86188,0.7014 -4.49727,0.7014 z m -43.814944,-0.6103 c 0,0 0,0 0.668741,-5.1935 0.358668,-2.6314 0.669418,-4.8478 0.69053,-4.9254 0.09129,-0.3356 0.528713,-0.5824 0.875946,-0.494 0.100158,0.026 1.793468,1.131 3.845059,2.5104 3.240045,2.1786 3.674001,2.4853 3.734178,2.6392 0.109997,0.2807 0.08709,0.5205 -0.07161,0.7485 -0.13177,0.1895 -0.476294,0.3978 -4.413223,2.6687 -4.386288,2.561 -4.386288,2.561 -4.386288,2.561 -0.818398,0.1709 -0.821769,0.173 -0.943346,-0.5149 z m 11.2274,-7.2175 c -0.128706,-0.027 -4.693716,-3.0523 -7.108427,-4.7094 -0.834219,-0.5724 -0.914282,-0.6404 -1.014457,-0.8598 -0.130642,-0.3258 -0.180399,-0.4824 -0.05903,-0.8281 l 10.73172,-15.9865 c 11.664937,-17.3765 10.883812,-16.2584 11.39375,-16.3085 0.1229,-0.016 0.306992,-8e-4 0.408974,0.026 0.108707,0.027 1.7935,1.1298 4.07749,2.6673 3.643324,2.4528 3.898995,2.6341 3.99933,2.839 0.140319,0.2861 0.119513,0.5789 -0.04887,0.7147 -0.06435,0.052 -4.949015,7.3137 -10.854812,16.1375 -5.905798,8.8239 -10.79575,16.0932 -10.866555,16.1542 -0.149996,0.1291 -0.451537,0.1995 -0.658886,0.1548 z m 23.781072,-35.0956 c -0.106121,0 -0.244462,-0.031 -0.307493,-0.058 -0.06306,-0.027 -1.856741,-1.2179 -3.986121,-2.6445 -3.541004,-2.3723 -3.882415,-2.613 -3.998589,-2.8185 -0.153545,-0.2714 -0.174463,-0.5444 -0.06515,-0.8515 0.108707,-0.306 3.192626,-4.8572 3.431958,-5.065 0.250445,-0.2175 0.483181,-0.3975 0.866914,-0.5028 0.383716,-0.1052 0.575952,-0.1193 0.754367,-0.1323 0.178334,-0.016 0.422812,0.02 0.629016,0.068 0.358522,0.083 0.498632,0.1702 3.21048,1.9817 1.559572,1.0419 2.926133,1.9885 3.036791,2.1036 0.110643,0.1145 0.07274,0.044 0.369861,0.5018 0.297203,0.4585 0.309477,1.1048 0.310186,1.3613 7.1e-4,0.2566 -0.04532,0.3445 -0.102417,0.5569 -0.09694,0.3608 -0.211155,0.5444 -1.735841,2.7915 -0.897606,1.3231 -1.690956,2.4488 -1.762986,2.502 -0.186753,0.1371 -0.427699,0.213 -0.650935,0.2051 z"></path>
+        <path fill="#e47234" d="m 11.749921,91.641281 c -0.853647,-0.8185 -1.630956,-1.6315 -1.727364,-1.8065 -0.1518402,-0.2755 0.38553,-0.8694 4.012288,-4.4344 4.587677,-4.5094 4.78082,-4.6422 6.207659,-4.2676 0.592793,0.1556 1.153924,0.6026 2.973527,2.3695 1.233555,1.1978 2.317938,2.1777 2.409708,2.1777 0.09184,0 1.055308,-0.8772 2.141163,-1.9494 2.37353,-2.3437 2.826005,-2.6468 3.951432,-2.6468 1.125427,0 1.577883,0.3031 3.951403,2.6468 1.085865,1.0722 2.054128,1.9494 2.15172,1.9494 0.09771,0 1.104591,-0.9166 2.237789,-2.0371 1.133208,-1.1205 2.278824,-2.1507 2.545808,-2.2895 0.52746,-0.2739 1.540071,-0.3419 2.196138,-0.1471 0.227153,0.067 1.425196,1.1016 2.662274,2.2981 1.237098,1.1967 2.360097,2.1756 2.495569,2.1756 0.135442,0 1.173477,-0.9166 2.306695,-2.0371 1.133208,-1.1205 2.281759,-2.1523 2.552335,-2.2928 0.630842,-0.3276 1.823682,-0.3276 2.454534,0 0.270576,0.1408 1.419137,1.1723 2.552335,2.2928 1.133218,1.1205 2.170994,2.0371 2.306167,2.0371 0.135164,0 1.219526,-0.9402 2.409609,-2.0894 1.190104,-1.1493 2.332794,-2.1745 2.53933,-2.2787 0.525659,-0.2647 1.872876,-0.2357 2.426764,0.052 0.255332,0.1322 1.391416,1.1582 2.524614,2.2787 1.133228,1.1205 2.131312,2.0373 2.217998,2.0373 0.08657,0 1.181994,-0.9823 2.434027,-2.1829 2.548176,-2.4434 3.063636,-2.7193 4.419569,-2.3658 0.625609,0.1632 1.317864,0.765 4.813826,4.1851 2.245739,2.1969 4.083162,4.0986 4.083162,4.2262 0,0.3474 -2.933865,3.2228 -3.407385,3.3395 -0.354177,0.088 -0.793269,-0.2738 -3.188461,-2.622 -1.527743,-1.498 -2.894124,-2.7235 -3.036392,-2.7235 -0.142188,0 -1.185844,0.9168 -2.319062,2.0373 -1.133198,1.1204 -2.28175,2.1522 -2.552315,2.2927 -0.270586,0.1407 -0.822852,0.2555 -1.227268,0.2555 -0.404435,0 -0.956701,-0.1149 -1.227287,-0.2555 -0.270575,-0.1408 -1.419117,-1.1723 -2.552335,-2.2927 -1.133208,-1.1205 -2.174098,-2.0373 -2.313092,-2.0373 -0.138965,0 -1.261984,0.9795 -2.495549,2.1768 -2.408634,2.3375 -2.941318,2.6447 -4.130417,2.3813 -0.757359,-0.1676 -0.733011,-0.1478 -3.153774,-2.5748 -1.221765,-1.2249 -2.10979,-1.9833 -2.322416,-1.9833 -0.211083,0 -1.222491,0.8539 -2.614673,2.2073 -3.392211,3.2977 -3.662836,3.2977 -7.030321,0 -1.238143,-1.213 -2.36749,-2.2055 -2.509679,-2.2055 -0.142188,0 -1.108203,0.8409 -2.146715,1.8685 -2.176327,2.1535 -2.635996,2.5117 -3.457146,2.6936 -1.168531,0.2587 -1.713703,-0.058 -4.112377,-2.3855 -1.233575,-1.1971 -2.356564,-2.1766 -2.495559,-2.1766 -0.138964,0 -1.179884,0.9167 -2.313092,2.0372 -1.133198,1.1204 -2.281759,2.1522 -2.552325,2.2927 -0.270596,0.1408 -0.822852,0.2556 -1.227277,0.2556 -0.404426,0 -0.956712,-0.1149 -1.227268,-0.2556 -0.270585,-0.1407 -1.419126,-1.1723 -2.552344,-2.2927 -1.133208,-1.1205 -2.178566,-2.0372 -2.323023,-2.0372 -0.144377,0 -1.460868,1.1822 -2.925388,2.6272 -1.46449,1.4449 -2.802731,2.7033 -2.973875,2.7964 -0.260178,0.1423 -0.565529,-0.075 -1.863264,-1.3191 z"></path>
+      </symbol>
+      <symbol id="close" viewBox="0 0 100 100">
+        <path d="M 58.844 50.001 L 98.17 10.676 C 100.613 8.234 100.613 4.274 98.17 1.832 C 95.726 -0.611 91.77 -0.611 89.327 1.832 L 50.001 41.158 L 10.674 1.832 C 8.23 -0.611 4.274 -0.611 1.83 1.832 C -0.613 4.274 -0.613 8.234 1.83 10.676 L 41.158 50.001 L 1.83 89.326 C -0.613 91.768 -0.613 95.728 1.83 98.17 C 3.052 99.389 4.653 100 6.252 100 C 7.851 100 9.452 99.389 10.674 98.168 L 50.001 58.842 L 89.327 98.168 C 90.548 99.389 92.149 100 93.748 100 C 95.347 100 96.948 99.389 98.17 98.168 C 100.613 95.726 100.613 91.766 98.17 89.324 L 58.844 50.001 Z"></path>
+      </symbol>
+      <symbol id="github" viewBox="0 0 100 100">
+        <path d="M 49.414 1.253 C 21.289 1.253 0 22.448 0 50.378 C 0 72.839 14.082 91.98 34.18 98.62 C 36.719 99.206 37.695 97.644 37.695 96.276 C 37.695 94.909 37.695 88.073 37.695 83.972 C 37.695 83.972 23.633 86.901 20.508 77.917 C 20.508 77.917 18.164 72.058 14.922 70.3 C 14.922 70.3 10.293 67.37 15.234 67.37 C 15.234 67.37 20.313 67.761 23.047 72.644 C 27.344 80.261 34.961 78.112 37.695 76.745 C 38.086 73.62 39.453 71.276 41.016 69.909 C 29.688 68.737 18.359 67.175 18.359 47.644 C 18.359 42.175 19.727 39.245 23.047 35.73 C 22.656 34.558 20.703 29.089 23.633 22.253 C 27.734 20.691 37.5 27.722 37.5 27.722 C 41.602 26.355 45.898 25.769 50.195 25.769 C 54.492 25.769 58.789 26.355 62.891 27.722 C 62.891 27.722 72.656 20.691 76.758 22.253 C 79.492 29.089 77.734 34.558 77.148 35.73 C 80.469 39.245 82.422 42.175 82.422 47.644 C 82.422 67.175 70.508 68.737 59.18 69.909 C 61.133 71.667 62.695 74.597 62.695 79.284 C 62.695 86.12 62.695 94.519 62.695 96.276 C 62.695 97.448 63.672 99.011 66.211 98.62 C 86.328 91.98 100 72.839 100 50.378 C 100 22.448 77.344 1.253 49.414 1.253 Z"></path>
+      </symbol>
+      <symbol id="logo_stylelint" viewBox="0 0 29 29">
+        <path d="m 14.767,27.573 c 3.11,-11.19 3.02,-11.24 5.267,-19.217 l 0.54,0.314 c 0.294,0.17 0.534,0.03 0.534,-0.31 V 4.557 c 0.596,-2.102 1.064,-3.726 1.2,-4.215 h 2.435 l 4.045,3.772 -2.656,2.31 2.01,2.186 L 14.9,27.573 c -0.065,0.107 -0.155,0.083 -0.135,0 z"></path>
+        <path d="m 16.214,3.457 c 0.12,0 0.217,0.066 0.217,0.15 v 1.95 c 0,0.08 -0.09,0.148 -0.21,0.148 h -3.27 c -0.12,0 -0.22,-0.067 -0.22,-0.15 v -1.95 c 0,-0.082 0.1,-0.148 0.22,-0.148 h 3.27 z m 4.036,-2.16 -3.598,2.09 c 0.042,0.065 0.067,0.14 0.067,0.22 v 1.95 c 0,0.1 -0.04,0.19 -0.11,0.265 l 3.63,2.11 c 0.24,0.145 0.45,0.027 0.45,-0.26 V 1.56 c 0,-0.288 -0.21,-0.406 -0.45,-0.262 z m -7.813,4.26 v -1.95 c 0,-0.08 0.025,-0.155 0.066,-0.22 L 8.905,1.297 C 8.658,1.154 8.455,1.272 8.455,1.559 v 6.11 c 0,0.29 0.202,0.4 0.45,0.26 l 3.635,-2.11 a 0.424,0.424 0 0 1 -0.104,-0.27 z"></path>
+        <path d="M 14.246,27.573 H 14.38 C 11.27,16.383 11.36,16.333 9.114,8.356 L 8.574,8.67 C 8.28,8.84 8.039,8.7 8.039,8.36 V 4.557 C 7.44,2.454 6.97,0.83 6.83,0.34 H 4.4 l -4.04,3.773 2.655,2.31 -2.01,2.186 13.24,18.96 z"></path>
+        <ellipse ry="0.99" rx="0.99" cy="8.8" cx="14.475"></ellipse>
+        <ellipse ry="0.99" rx="0.99" cy="14.7" cx="14.475"></ellipse>
+        <ellipse ry="0.99" rx="0.99" cy="20.5" cx="14.475"></ellipse>
+      </symbol>
+    </svg>
+  </body>
+</html>

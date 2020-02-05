@@ -1,0 +1,18 @@
+{
+	"ruleID": {
+		"option1": "Description and code example",
+		"option2": "Description and code example",
+		"etc": "Description and code example"
+	},
+	"block-closing-brace-newline-after": {
+		"always": "There must always be a newline after the closing brace.\n\na { color: pink; }\nb { color: red; }",
+		"always-single-line": "There must always be a newline after the closing brace in single-line blocks.\n\na { color: pink;\n} b { color: red; }",
+		"never-single-line": "There must never be whitespace after the closing brace in single-line blocks.\n\na { color: pink; }b { color: red; }",
+		"always-multi-line": "There must always be a newline after the closing brace in multi-line blocks.\n\na { color: pink;\n}\nb { color: red; }",
+		"never-multi-line": "There must never be whitespace after the closing brace in multi-line blocks.\n\na { color: pink;\n}b { color: red; }"
+	},
+	"block-closing-brace-newline-before": {
+		"true": "There must always be a newline before the closing brace.\n\na { color: pink;\n}",
+		"false": "There must never be whitespace before the closing brace.\n\na {\n  color: pink;}"
+	}
+}
