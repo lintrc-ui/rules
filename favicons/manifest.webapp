@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Lintrc UI",
+  "description": "Visual configuration of linter language for programming and markup languages with user interface (UI)",
+  "icons": {
+    "60": "favicons/firefox_app_60x60.png",
+    "128": "favicons/firefox_app_128x128.png",
+    "512": "favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Aleksi Magner",
+    "url": "https://aleksimagner.github.io/w/"
+  }
+}
