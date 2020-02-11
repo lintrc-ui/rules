@@ -67,22 +67,24 @@
       <div class="menu">
         <input class="visually-hidden menu__check" id="menu" type="checkbox">
         <label class="menu__wrap-icon" for="menu"><span class="menu__icon"></span></label>
-        <div class="menu__wrap">
-          <label class="menu__close" for="menu">
-            <svg class="menu__img">
-              <use xlink:href="#close"></use>
-            </svg>
-          </label>
-          <nav class="menu__list"><a class="menu__item" href="editorconfig.html">Editor Config</a><a class="menu__item" href="htmlhintrc.html">HTML Hint</a><a class="menu__item" href="puglintrc.html">Pug Linter</a><a class="menu__item" href="stylelintrc.html">Style Lint</a><a class="menu__item" href="sasslintrc.html">Sass Lint</a><a class="menu__item" href="eslint.html">ESLint</a></nav>
-                    <div class="theme-button menu__theme-button">
-                      <label class="theme-button__label" for="themeMenu">Dark mode</label>
-                      <input class="visually-hidden theme-button__check" id="themeMenu" type="checkbox" checked>
-                      <label class="theme-button__base" for="themeMenu"><span class="theme-button__lever"></span></label>
-                    </div>
-                    <div class="social menu__social"><a class="social__icon" href="https://github.com/lintrc-ui/develop" title="We are on GitHub" target="_blank">
-                        <svg class="social__img social__img--github">
-                          <use xlink:href="#github"></use>
-                        </svg></a></div>
+        <div class="menu__area">
+          <div class="menu__wrap">
+            <label class="menu__close" for="menu">
+              <svg class="menu__img">
+                <use xlink:href="#close"></use>
+              </svg>
+            </label>
+            <nav class="menu__list"><a class="menu__item" href="editorconfig.html">Editor Config</a><a class="menu__item" href="htmlhintrc.html">HTML Hint</a><a class="menu__item" href="puglintrc.html">Pug Linter</a><a class="menu__item" href="stylelintrc.html">Style Lint</a><a class="menu__item" href="sasslintrc.html">Sass Lint</a><a class="menu__item" href="eslint.html">ESLint</a></nav>
+                        <div class="theme-button menu__theme-button">
+                          <label class="theme-button__label" for="themeMenu">Dark mode</label>
+                          <input class="visually-hidden theme-button__check" id="themeMenu" type="checkbox" checked>
+                          <label class="theme-button__base" for="themeMenu"><span class="theme-button__lever"></span></label>
+                        </div>
+                        <div class="social menu__social"><a class="social__icon" href="https://github.com/lintrc-ui/develop" title="We are on GitHub" target="_blank">
+                            <svg class="social__img social__img--github">
+                              <use xlink:href="#github"></use>
+                            </svg></a></div>
+          </div>
         </div>
       </div>
     </header>
@@ -91,6 +93,7 @@
         <h1 class="about__title">Visual configuration of code linters</h1>
         <p class="about__text">This resource was created to simplify customization of popular code linters among developers. To facilitate and speed up the process, all settings are divided into logical sections and have a visual display of the applicable rules.</p>
         <p class="about__text">Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.</p>
+        <div class="about__bg"></div>
       </section>
       <section class="about-lint">
         <h2 class="about-lint__title">Basic information about the presented linters</h2>
@@ -99,7 +102,7 @@
               <svg class="tabs__logo">
                 <use xlink:href="#logo_stylelint"></use>
               </svg>stylelint</span><span class="tabs__main-link"><img class="tabs__logo" src="./img/logo-eslint.svg" alt="ESLint logo">ESLint</span></li>
-          <li class="tabs__content tabs__content--active"><span class="tabs__inline-link tabs__inline-link--active"><img class="tabs__logo-inline" src="./img/logo-editorconfig.png" alt="editorconfig logo">EditorConfig</span>
+          <li class="tabs__content tabs__content--active"><span class="tabs__inline-link"><img class="tabs__logo-inline" src="./img/logo-editorconfig.png" alt="editorconfig logo">EditorConfig</span>
             <div class="tabs__wrap">
               <h2 class="tabs__title">About</h2>
               <p class="tabs__text">EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.</p>
